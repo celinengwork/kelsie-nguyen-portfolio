@@ -464,3 +464,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline
   .js [data-reveal], .js [data-bloom] { opacity: 1; transform: none; }
   .drift-vp { overflow-y: auto; }
 }
+
+/* Salekit: title keeps its own casing; slides anchored left so text reads from the left edge */
+.cs__title--as-typed { text-transform: none; }
+#bloom-vec-sales-kit .slot img { object-position: left center; }
