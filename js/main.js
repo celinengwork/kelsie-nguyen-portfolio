@@ -60,12 +60,13 @@
     var suffix = el.getAttribute('data-suffix') || '';
     var final = prefix + el.getAttribute('data-count') + suffix;
     if (reduce || !('IntersectionObserver' in window)) { el.textContent = final; return; }
+    el.textContent = prefix + '0' + suffix;
 
     var run = function () {
       var start = performance.now();
       var dur = 1200;
       var tick = function (t) {
-        var p = Math.min(1, (t - start) / dur);
+        var p = Math.max(0, Math.min(1, (t - start) / dur));
         var eased = 1 - Math.pow(1 - p, 3);
         el.textContent = prefix + Math.round(target * eased) + suffix;
         if (p < 1) requestAnimationFrame(tick); else el.textContent = final;

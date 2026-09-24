@@ -172,7 +172,7 @@ h1, h2, h3, p, figure { margin: 0; }
 .bloom-cols { display: flex; flex-direction: column; gap: 40px; }
 .bloom-stack { position: relative; width: 100%; max-width: 322px; aspect-ratio: 1 / 1.32; margin: 0 auto; }
 @media (min-width: 900px) {
-  .bloom-cols { flex-direction: row; gap: clamp(32px, 4vw, 56px); align-items: flex-start; }
+  .bloom-cols { flex-direction: row; gap: clamp(32px, 4vw, 56px); align-items: center; }
   .bloom-text { flex: 1 1 60%; max-width: 60%; min-width: 0; }
   .bloom-stack { flex: 1 1 35%; max-width: 35%; margin: 0; align-self: center; }
 }
@@ -181,9 +181,9 @@ h1, h2, h3, p, figure { margin: 0; }
 .bloomed__lead { margin: 0 0 clamp(22px, 2.6vw, 34px); font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(18px, 1.6vw, 17px); color: var(--green); }
 .bloomed__company { font-family: var(--serif); font-weight: 500; font-size: clamp(28px, 3vw, 40px); line-height: 1.05; color: var(--green); margin-bottom: 6px; }
 .bloomed__role { font: 500 13px var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
-.bloomed__desc { margin: 0 0 clamp(18px, 2.2vw, 28px); font: 400 clamp(13.5px, 1vw, 15px)/1.65 var(--sans); color: var(--ink); max-width: 460px; text-wrap: pretty; }
+.bloomed__desc { margin: 0 0 clamp(20px, 2.4vw, 30px); font: 400 clamp(15px, 1.15vw, 17px)/1.7 var(--sans); color: var(--ink); max-width: 600px; text-wrap: pretty; }
 .glass {
-  border-radius: 4px; background: rgba(247, 244, 236, 0.85);
+  max-width: 600px; border-radius: 4px; background: rgba(247, 244, 236, 0.85);
   -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
   border: 1px solid var(--line); box-shadow: 0 18px 44px rgba(49, 91, 79, 0.10); padding: clamp(18px, 2vw, 26px);
 }
