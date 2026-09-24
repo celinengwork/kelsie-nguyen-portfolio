@@ -434,13 +434,17 @@ h1, h2, h3, p, figure { margin: 0; }
 #bloom-brand-commercial-2,
 #bloom-vec-interviews,
 #bloom-vec-website,
-#bloom-vec-sales-kit { padding-top: clamp(56px, 6vw, 80px); padding-bottom: clamp(56px, 6vw, 80px); }
+#bloom-vec-sales-kit,
+#bloom-vec-media,
+#bloom-vec-daily-social { padding-top: clamp(56px, 6vw, 80px); padding-bottom: clamp(56px, 6vw, 80px); }
 
 #bloom-cavailles .cs__grid-a,
 #bloom-brand-commercial-2 .cs__grid-a,
 #bloom-vec-interviews .cs__grid-a,
 #bloom-vec-website .cs__body-b,
-#bloom-vec-sales-kit .cs__body-b { margin-top: clamp(32px, 4vw, 48px); }
+#bloom-vec-sales-kit .cs__body-b,
+#bloom-vec-media .cs__body-b,
+#bloom-vec-daily-social .cs__body-b { margin-top: clamp(32px, 4vw, 48px); }
 
 /* Interview drift column no taller than the postcard + stats beside it */
 #bloom-vec-interviews .drift-vp--tall { height: clamp(480px, 52vw, 660px); }
