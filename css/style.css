@@ -167,7 +167,7 @@ h1, h2, h3, p, figure { margin: 0; }
    ========================================================= */
 .bloomed { position: relative; width: 100%; background: var(--ivory); padding: clamp(64px, 8vw, 88px) clamp(24px, 6vw, 120px); overflow: hidden; }
 .bloomed__bg--cav { background-image: url("../images/bg/airy-breeze-1.jpg"); }
-.bloomed__bg--vec { background-image: url("../images/bg/airy-breeze-2.jpg"); }
+.bloomed__bg--vec { background: linear-gradient(180deg, #E4EBDB 0%, #F0F2E6 55%, #F7F7EB 100%); }
 .bloomed__inner { position: relative; max-width: 1440px; margin: 0 auto; }
 .bloom-cols { display: flex; flex-direction: column; gap: 40px; }
 .bloom-stack { position: relative; width: 100%; max-width: 322px; aspect-ratio: 1 / 1.32; margin: 0 auto; }
@@ -371,14 +371,14 @@ h1, h2, h3, p, figure { margin: 0; }
 
 /* Section-specific backgrounds (hand-tuned in the design editor) */
 .cs-cav__scrim { background: linear-gradient(160deg, #C7D5C4B8, #FDFDFD); }
-.cs-bc2__bg { background-image: url("../images/bg/rose-terrace.jpg"); }
+.cs-bc2__bg { background: linear-gradient(180deg, #FBFBF7 0%, #EBF0E2 55%, #CFE0C1 100%); }
 .cs-int__scrim { background: linear-gradient(180deg, #C7DDB5EB, #EDF1EA 100%); left: -42px; top: 1px; }
 .cs-web__bg {
   background-image: url("../images/bg/garden-painting.jpg");
   width: 1745px; height: 1892px; left: -185px; top: 3px; right: auto; bottom: auto;
 }
 .cs-kit__scrim { background: linear-gradient(180deg, #FFFFFFEB, #C9DEB9EB); top: -10px; }
-.cs-media__bg { background-image: url("../images/bg/rose-terrace.jpg"); }
+.cs-media__bg { background: linear-gradient(180deg, #CCDFBC 0%, #E8EEDF 50%, #D9DDC6 100%); }
 .cs-social__scrim { background: linear-gradient(180deg, #D8DCC4EB, #E2ECEDEB); }
 
 /* =========================================================
