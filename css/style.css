@@ -142,10 +142,10 @@ h1, h2, h3, p, figure { margin: 0; }
    ========================================================= */
 .gardener {
   position: relative; overflow: hidden;
-  background: linear-gradient(180deg, #EDF0E1 0%, #F7F4EC 60%, #FAF3E2 100%);
+  background: var(--ivory);
   padding: clamp(56px, 8vw, 104px) clamp(24px, 6vw, 96px);
 }
-.gardener__scrim { background: linear-gradient(10deg, #F8F8ECED, #E8F3E4D8); }
+.gardener__scrim { background: linear-gradient(180deg, #F1F2EA 0%, #F6F3EC 100%); }
 .gardener__grid { display: grid; grid-template-columns: 1fr; gap: clamp(32px, 4vw, 56px); align-items: center; }
 @media (min-width: 900px) { .gardener__grid { grid-template-columns: minmax(280px, 380px) minmax(0, 1fr); } }
 .gardener__portrait-wrap { max-width: 380px; width: 100%; }
@@ -167,7 +167,7 @@ h1, h2, h3, p, figure { margin: 0; }
    ========================================================= */
 .bloomed { position: relative; width: 100%; background: var(--ivory); padding: clamp(64px, 8vw, 88px) clamp(24px, 6vw, 120px); overflow: hidden; }
 .bloomed__bg--cav { background-image: url("../images/bg/airy-breeze-1.jpg"); }
-.bloomed__bg--vec { background: linear-gradient(180deg, #E4EBDB 0%, #F0F2E6 55%, #F7F7EB 100%); }
+.bloomed__bg--vec { background: linear-gradient(180deg, #EEF0E9 0%, #F5F3EC 100%); }
 .bloomed__inner { position: relative; max-width: 1440px; margin: 0 auto; }
 .bloom-cols { display: flex; flex-direction: column; gap: 40px; }
 .bloom-stack { position: relative; width: 100%; max-width: 322px; aspect-ratio: 1 / 1.32; margin: 0 auto; }
@@ -208,7 +208,7 @@ h1, h2, h3, p, figure { margin: 0; }
    THE BLOOMS (carousel)
    ========================================================= */
 .blooms { position: relative; width: 100%; background: var(--ivory); padding: clamp(72px, 11vw, 112px) clamp(24px, 6vw, 96px); }
-.blooms__scrim { background: linear-gradient(160deg, #F7F7EBEB, #C7D0C1); opacity: 0.94; }
+.blooms__scrim { background: linear-gradient(180deg, #F5F3EC 0%, #E7EBE3 100%); }
 .section-title { font-family: var(--serif); font-weight: 400; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.15; letter-spacing: .02em; text-transform: uppercase; color: var(--ink); margin: 0 0 20px; }
 .section-lead { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(18px, 2vw, 20px); line-height: 1.35; color: var(--green); }
 .blooms .section-lead { margin: 0 0 clamp(36px, 5vw, 56px); }
@@ -230,7 +230,7 @@ h1, h2, h3, p, figure { margin: 0; }
 .cs { position: relative; background: var(--ivory); font-family: var(--sans); overflow: hidden; }
 .cs--a { padding: clamp(80px, 9vw, 112px) clamp(24px, 6vw, 120px); }
 .cs--b { padding: clamp(80px, 11vw, 112px) clamp(24px, 6vw, 120px); }
-.cs--ruled { border-top: 1px solid rgba(49, 91, 79, 0.15); }
+.cs--ruled { border-top: 1px solid rgba(49, 91, 79, 0.08); }
 
 .cs__title-a { margin: 0 0 12px; font-family: var(--serif); font-weight: 500; font-size: clamp(30px, 4vw, 40px); line-height: 1.15; color: var(--ink-deep); max-width: 768px; }
 .cs__sub-a { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(16px, 2vw, 19px); color: var(--green); }
@@ -370,16 +370,16 @@ h1, h2, h3, p, figure { margin: 0; }
 .cs__buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
 
 /* Section-specific backgrounds (hand-tuned in the design editor) */
-.cs-cav__scrim { background: linear-gradient(160deg, #C7D5C4B8, #FDFDFD); }
-.cs-bc2__bg { background: linear-gradient(180deg, #FBFBF7 0%, #EBF0E2 55%, #CFE0C1 100%); }
-.cs-int__scrim { background: linear-gradient(180deg, #C7DDB5EB, #EDF1EA 100%); left: -42px; top: 1px; }
+.cs-cav__scrim { background: linear-gradient(180deg, #E7EBE3 0%, #F6F3EC 100%); }
+.cs-bc2__bg { background: linear-gradient(180deg, #F6F3EC 0%, #F3ECE6 100%); }
+.cs-int__scrim { background: linear-gradient(180deg, #F3ECE6 0%, #E9EDE5 100%); }
 .cs-web__bg {
   background-image: url("../images/bg/garden-painting.jpg");
   width: 1745px; height: 1892px; left: -185px; top: 3px; right: auto; bottom: auto;
 }
-.cs-kit__scrim { background: linear-gradient(180deg, #FFFFFFEB, #C9DEB9EB); top: -10px; }
-.cs-media__bg { background: linear-gradient(180deg, #CCDFBC 0%, #E8EEDF 50%, #D9DDC6 100%); }
-.cs-social__scrim { background: linear-gradient(180deg, #D8DCC4EB, #E2ECEDEB); }
+.cs-kit__scrim { background: linear-gradient(180deg, #F7F5EF 0%, #EEEAE1 100%); }
+.cs-media__bg { background: linear-gradient(180deg, #EEEAE1 0%, #E8ECE4 100%); }
+.cs-social__scrim { background: linear-gradient(180deg, #E8ECE4 0%, #F4EDE7 100%); }
 
 /* =========================================================
    WILDFLOWERS
