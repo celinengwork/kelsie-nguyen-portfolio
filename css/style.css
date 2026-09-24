@@ -468,3 +468,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline
 /* Salekit: title keeps its own casing; slides anchored left so text reads from the left edge */
 .cs__title--as-typed { text-transform: none; }
 #bloom-vec-sales-kit .slot img { object-position: left center; }
+
+/* Meadow edge: the flower band from the What Has Bloomed painting, faded in at the foot of a few plain sections.
+   Bottom padding grows to the band's height so the flowers sit below the content, never behind text. */
+.meadow {
+  position: absolute; left: 0; right: 0; bottom: 0; height: clamp(84px, 12vw, 180px); pointer-events: none;
+  background: url("../images/bg/airy-breeze-1.jpg") center bottom / 100% auto no-repeat;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 55%);
+  mask-image: linear-gradient(to bottom, transparent 0%, #000 55%);
+}
+#blooms,
+#bloom-brand-commercial-2,
+#bloom-vec-media { padding-bottom: clamp(110px, 13vw, 180px); }
