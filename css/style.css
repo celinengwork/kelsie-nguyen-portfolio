@@ -480,3 +480,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline
 #blooms,
 #bloom-brand-commercial-2,
 #bloom-vec-media { padding-bottom: clamp(110px, 13vw, 180px); }
+
+/* Corner branches cut from the garden paintings (sky keyed out to transparency).
+   Top-right is empty in every case-study section (titles sit left, columns start below the heading);
+   on The Gardener the branch tucks behind the portrait. Hidden below 1200px, where titles span the full width. */
+.branch { display: none; position: absolute; top: 0; width: clamp(260px, 24vw, 400px); height: auto; pointer-events: none; }
+.branch--tr { right: 0;
+  -webkit-mask-image: radial-gradient(130% 130% at 100% 0%, #000 50%, transparent 80%);
+  mask-image: radial-gradient(130% 130% at 100% 0%, #000 50%, transparent 80%); }
+.branch--tl { left: 0;
+  -webkit-mask-image: radial-gradient(130% 130% at 0% 0%, #000 50%, transparent 80%);
+  mask-image: radial-gradient(130% 130% at 0% 0%, #000 50%, transparent 80%); }
+@media (min-width: 1200px) { .branch { display: block; } }
