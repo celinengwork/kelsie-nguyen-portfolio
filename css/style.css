@@ -507,3 +507,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline
   -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
   mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
 }
+
+/* Career photo stacks: always show the top edge of each photo (headlines, faces) */
+.fan-card .slot img { object-position: center top; }
