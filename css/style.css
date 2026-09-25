@@ -510,3 +510,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline
 
 /* Career photo stacks: always show the top edge of each photo (headlines, faces) */
 .fan-card .slot img { object-position: center top; }
+
+/* Strategy & Brand Planning: deck slides shown whole (16:9), anchored left so no text is cut */
+#bloom-brand-commercial-2 .ph-sq { aspect-ratio: 16 / 9; border-radius: 10px; }
+#bloom-brand-commercial-2 .slot img { object-position: left center; }
