@@ -526,3 +526,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline
 .stamp { transform: rotate(-7deg) translateZ(0); }
 .stamp + .stamp { transform: rotate(5deg) translateZ(0); }
 .meadow, .branch { transform: translateZ(0); }
+
+/* The Gardener: highlighted keywords */
+.gardener__body strong { font-weight: 700; color: var(--green); }
