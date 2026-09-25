@@ -514,3 +514,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline
 /* Strategy & Brand Planning: deck slides shown whole (16:9), anchored left so no text is cut */
 #bloom-brand-commercial-2 .ph-sq { aspect-ratio: 16 / 9; border-radius: 10px; }
 #bloom-brand-commercial-2 .slot img { object-position: left center; }
+
+/* VEC: rose cluster in the empty bottom-right, beside (and behind) the photo stack */
+.branch--vec { width: clamp(220px, 18vw, 300px); }
+
+/* Postcards: give each its own compositing layer so scrolling moves a cached bitmap instead of
+   re-rasterising drop-shadow + mask + rotated text every frame (the source of the jitter). */
+.pc-wrap-a, .pc-tilt--b, .stamp { transform: translateZ(0); backface-visibility: hidden; will-change: transform; }
+.pc-tilt { transform: rotate(-1.6deg) translateZ(0); backface-visibility: hidden; }
+.pc-tilt--b { transform: rotate(-1.6deg) translateZ(0); }
+.stamp { transform: rotate(-7deg) translateZ(0); }
+.stamp + .stamp { transform: rotate(5deg) translateZ(0); }
+.meadow, .branch { transform: translateZ(0); }
