@@ -529,3 +529,29 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline
 
 /* The Gardener: highlighted keywords */
 .gardener__body strong { font-weight: 700; color: var(--green); }
+
+/* =========================================================
+   SIDE PLOTS (Behance projects)
+   ========================================================= */
+.side-plots {
+  position: relative;
+  background: linear-gradient(180deg, #F4EDE7 0%, #F3F1EA 55%, #E8EEE1 100%);
+  padding: clamp(56px, 6vw, 80px) clamp(24px, 6vw, 120px);
+}
+.side-plots .section-lead { max-width: 46rem; }
+.plots { margin-top: clamp(32px, 4vw, 48px); display: grid; grid-template-columns: 1fr; gap: clamp(28px, 3vw, 40px) clamp(20px, 2.4vw, 32px); }
+@media (min-width: 600px) { .plots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 900px) { .plots { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.plot { min-width: 0; }
+.plot__thumb {
+  position: relative; aspect-ratio: 404 / 316; border-radius: 12px; overflow: hidden; background: var(--placeholder);
+  border: 1px solid rgba(49, 91, 79, 0.10); box-shadow: 0 12px 26px -18px rgba(49, 91, 79, 0.4);
+}
+.plot__thumb .slot--empty::after { border-radius: 12px; }
+.plot__title { display: inline-block; margin: 16px 0 6px; font: 600 15px/1.4 var(--sans); color: var(--ink); }
+.plot__title:hover { color: var(--green); text-decoration: underline; text-underline-offset: 3px; }
+.plot__meta { margin: 0 0 10px; font: 400 13px/1.6 var(--sans); color: var(--muted); }
+.plot__more { font: 600 12px var(--sans); letter-spacing: .08em; text-transform: uppercase; color: var(--green); }
+.plot__more span { display: inline-block; transition: transform 300ms ease; }
+.plot__more:hover { color: var(--green-hover); }
+.plot__more:hover span { transform: translateX(4px); }
